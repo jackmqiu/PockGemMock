@@ -19,8 +19,12 @@ var config = {
                 loader: 'babel-loader',
             },
             {
-                test: /\.css$/,
-                loader: 'style-loader|css-loader?-svgo'
+              test: /\.css$/,
+              include: APP_DIR,
+              loaders: [
+                  require.resolve('style-loader'),
+                  require.resolve('css-loader'),
+              ],
             }
         ]
     },

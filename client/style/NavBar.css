@@ -1,0 +1,27 @@
+:local(ul) {
+    position: fixed;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+}
+
+:local(li) {
+
+  float: left;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-right: 1px solid #bbb;
+}
+
+:local(.tabs) {
+  float: left;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+:local(.active) {
+    background-color: #4CAF50;
+}

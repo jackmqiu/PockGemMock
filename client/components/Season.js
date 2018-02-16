@@ -1,10 +1,10 @@
 import React from "react";
-import RewardCategory from "./RewardCategory";
+import RewardBranch from "./RewardBranch";
 
 const Season = props => {
-  const RewardCategories = props.SeasonObject.branches.map(branch => {
+  const RewardBranches = props.SeasonObject.branches.map(branch => {
     return (
-      <RewardCategory
+      <RewardBranch
         onBranchSelect={props.onBranchSelect}
         key={branch.id}
         branch={branch}
@@ -14,7 +14,7 @@ const Season = props => {
 
   return (
     <ul className="season">
-      {RewardCategories}
+      {RewardBranches}
     </ul>
   );
 };

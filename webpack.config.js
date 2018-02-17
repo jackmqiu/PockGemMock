@@ -25,6 +25,15 @@ var config = {
                   require.resolve('style-loader'),
                   require.resolve('css-loader'),
               ],
+            },
+            {
+              test:/\.scss$/,
+              include: APP_DIR,
+              loaders: [
+                require.resolve('style-loader'),
+                require.resolve('css-loader'),
+                require.resolve('sass-loader'),
+              ]
             }
         ]
     },

@@ -26,8 +26,11 @@
     "babel-preset-react": "^6.24.1",
     "css-loader": "^0.28.9",
     "express": "^4.16.2",
+    "node-sass": "^4.7.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "sass-loader": "^6.0.6",
+    "scss-loader": "0.0.1",
     "style-loader": "^0.20.1",
     "webpack": "^3.11.0",
     "webpack-dev-middleware": "^2.0.5"

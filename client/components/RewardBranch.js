@@ -5,7 +5,7 @@ const RewardCategory = ({ branch, onBranchSelect }) => {
   const imageUrl = branch.imageUrl;
 
   return (
-    <li onClick={() => onBranchSelect(branch)}>
+    <li onClick={() => onBranchSelect(branch)} >
       <div className={styles.reward__branch_slot}>
         <figure>
           <img className={styles.branch_image} src={branch.imageUrl} />

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import styles from '../style/NavBar.css';
+import styles from '../style/NavBar.scss';
 
 class NavBar extends Component {
   constructor(props) {
@@ -10,7 +10,7 @@ class NavBar extends Component {
 
   render() {
     return (
-      <div className="nav-bar">
+      <div className={styles.nav_bar}>
         <ul>
           <li >Battle</li>
           <li className={styles.tabs}>Prizes & Ranks</li>

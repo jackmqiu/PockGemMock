@@ -3,13 +3,16 @@ import ReactDOM from 'react-dom';
 import Counter from './components/Counter';
 import NavBar from './components/NavBar';
 import Season from './components/Season';
-import {SeasonObject} from './state.js';
+import RewardList from './components/RewardList';
+
+import {SeasonObject, Rewards} from './state.js';
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
       season: SeasonObject,
+      rewards: Rewards,
     };
   }
   render () {
@@ -17,6 +20,7 @@ class App extends Component {
       <div>
         <NavBar />
         <Season SeasonObject={this.state.season}/>
+        <RewardList Rewards={this.state.rewards}/>
       </div>
     )
   }

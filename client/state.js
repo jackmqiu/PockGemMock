@@ -44,6 +44,301 @@ const SeasonObject = {
       discountPercentage: 25,
     },
   ]
-}
+};
 
-export {SeasonObject};
+const Rewards = {
+  rewardList28: [
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+  ],
+  rewardList40: [
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+    {
+      title: 'Prize',
+      description: 'Bitcoin',
+    },
+  ]
+};
+
+export {SeasonObject, Rewards};

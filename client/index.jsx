@@ -5,7 +5,7 @@ import NavBar from './components/NavBar';
 import Season from './components/Season';
 import RewardList from './components/RewardList';
 
-import {SeasonObject, Rewards} from './state.js';
+import {SeasonObject, Rewards} from './stateMock.js';
 
 class App extends Component {
   constructor(props) {
@@ -19,7 +19,7 @@ class App extends Component {
     return (
       <div>
         <NavBar />
-        <Season SeasonObject={this.state.season}/>
+        //<Season SeasonObject={this.state.season}/>
         <RewardList Rewards={this.state.rewards}/>
       </div>
     )

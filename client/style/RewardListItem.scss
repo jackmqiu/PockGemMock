@@ -1,0 +1,13 @@
+:local(.reward_slot) {
+  height: 100%;
+  width: 200px;
+}
+:local(.reward_heading) {
+  color: lighten(red, 20%);
+}
+
+:local(.reward_image) {
+  display: block;
+  height: auto;
+  width: 100%;
+}

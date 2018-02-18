@@ -3,8 +3,11 @@ import ReactDOM from 'react-dom';
 import { browserHistory, Router, Route, Link, withRouter } from 'react-router-3';
 import Counter from './components/Counter';
 import NavBar from './components/NavBar';
-import Season from './components/Season';
-import RewardList from './components/RewardList';
+import Season from './containers/Season';
+import RewardList from './containers/RewardList';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+import reducers from "./reducers";
 
 import {SeasonObject, Rewards} from './stateMock.js';
 
@@ -20,15 +23,18 @@ class App extends Component {
     return (
       <div>
         <NavBar />
-        //<Season SeasonObject={this.state.season}/>
+        //<Season />
         <RewardList Rewards={this.state.rewards}/>
       </div>
     )
   }
 }
 
+// <Router history={browserHistory} routes = {routes}/>
 ReactDOM.render(
+  <Provider store={createStore(reducers)}>
 
-  <Router history={browserHistory} routes = {routes}/>
+    <App/>
+  </Provider>
 
   , document.getElementById('content'));

@@ -1,10 +1,11 @@
 import React from "react";
-import RewardListItem from "./RewardListItem.js";
+import RewardListItem from "../components/RewardListItem.js";
 import styles from "../style/RewardList.scss";
+import { connect } from 'react-redux';
 
 const RewardList = props => {
   let i = 0;
-  const rewardItems = props.Rewards.rewardList28.map(reward => {
+  const rewardItems = props.rewards.map(reward => {
     i++;
     return (
       <RewardListItem
@@ -22,4 +23,10 @@ const RewardList = props => {
   );
 };
 
-export default RewardList;
+function mapStateToProps(state) {
+  return {
+    rewards: state.rewardList28,
+  }
+}
+
+export default connect(mapStateToProps)(Season);

@@ -5,6 +5,8 @@ import Legendary3Reducer from './reducer_Legendary3_40_rewards';
 import DiscountReducer from './reducer_Discount_28_rewards';
 import SeasonObjectReducer from './reducer_season_branches';
 import ActiveBranchReducer from './reducer_active_branch';
+import TabsReducer from './reducer_tabs';
+import ActiveTabReducer from './reducer_active_tab';
 
 const rootReducer = combineReducers({
   activeBranch: ActiveBranchReducer,
@@ -13,6 +15,8 @@ const rootReducer = combineReducers({
   legendary2: Legendary2Reducer,
   legendary3: Legendary3Reducer,
   discount: DiscountReducer,
+  tabs: TabsReducer,
+  activeTab: ActiveTabReducer,
 })
 
 export default rootReducer;

@@ -4,7 +4,7 @@ import { browserHistory, Router, Link, withRouter } from 'react-router-3';
 
 
 //component imports
-import NavBar from './components/NavBar';
+import NavBar from './containers/NavBar';
 import RewardBranch from './components/RewardBranch';
 import RewardList from './containers/RewardList';
 import RewardListItem from './components/RewardListItem';

@@ -1,3 +1,21 @@
+const Tabs = [
+  {
+    tab_name: 'Battle',
+    tab_link: 'battle/',
+  },
+  {
+    tab_name: 'Prizes & Ranks',
+    tab_link: 'prizes&ranks/',
+  },
+  {
+    tab_name: 'Rewards',
+    tab_link: 'rewards/',
+  },
+  {
+    tab_name: 'Armoury',
+    tab_link: 'armoury/',
+  },
+];
 
 const SeasonObject = {
   title: 'Fall Season',
@@ -341,4 +359,4 @@ const Rewards = {
   ]
 };
 
-export {SeasonObject, Rewards};
+export {SeasonObject, Rewards, Tabs};

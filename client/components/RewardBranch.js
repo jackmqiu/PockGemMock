@@ -5,14 +5,12 @@ const RewardCategory = ({ branch, onBranchSelect }) => {
   const imageUrl = branch.imageUrl;
 
   return (
-    <li onClick={() => onBranchSelect(video)} className="reward-branch">
-      <div className="video-list media">
-        <div className="media-left">
-          <img className="branch-image" src={branch.imageUrl} />
-        </div>
-        <div className="media-body">
-          <div className={styles.reward__branch_heading}>{branch.title}</div>
-        </div>
+    <li onClick={() => onBranchSelect(branch)}>
+      <div className={styles.reward__branch_slot}>
+        <figure>
+          <img className={styles.branch_image} src={branch.imageUrl} />
+        </figure>
+        <div className={styles.reward__branch_heading}>{branch.title}</div>
       </div>
     </li>
   );

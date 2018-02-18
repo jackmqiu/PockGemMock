@@ -25,8 +25,8 @@ const RewardList = props => {
 
 function mapStateToProps(state) {
   return {
-    rewards: state.rewardList28,
+    rewards: state.legendary1,
   }
 }
 
-export default connect(mapStateToProps)(Season);
+export default connect(mapStateToProps)(RewardList);

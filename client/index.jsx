@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+
 import { browserHistory, Router, Route, Link, withRouter } from 'react-router-3';
+import routes from './routes';
+
 import Counter from './components/Counter';
 import NavBar from './components/NavBar';
 import Season from './containers/Season';
@@ -23,18 +26,17 @@ class App extends Component {
     return (
       <div>
         <NavBar />
-        //<Season />
-        <RewardList Rewards={this.state.rewards}/>
+
       </div>
     )
   }
 }
 
-// <Router history={browserHistory} routes = {routes}/>
+
 ReactDOM.render(
   <Provider store={createStore(reducers)}>
+    <Router history={browserHistory} routes = {routes}/>
 
-    <App/>
   </Provider>
 
   , document.getElementById('content'));

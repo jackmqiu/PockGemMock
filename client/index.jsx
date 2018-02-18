@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import { browserHistory, Router, Route, Link, withRouter } from 'react-router-3';
 import Counter from './components/Counter';
 import NavBar from './components/NavBar';
 import Season from './components/Season';
@@ -28,6 +29,6 @@ class App extends Component {
 
 ReactDOM.render(
 
-  <App />
+  <Router history={browserHistory} routes = {routes}/>
 
   , document.getElementById('content'));

@@ -9,7 +9,7 @@ const Season = props => {
   const RewardBranches = props.seasonObject.branches.map(branch => {
     return (
       <RewardBranch
-        onClick={() => this.props.selectBranch(branch)}
+        onBranchSelect = {selectBranch}
         key={branch.id}
         branch={branch}
       />

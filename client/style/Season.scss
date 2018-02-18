@@ -1,0 +1,11 @@
+:local(.season) {
+  display: block;
+}
+
+:local(.container) {
+  background-color: yellow;
+  display:flex;
+  flex-direction: row;
+  padding: 10px;
+  overflow: auto;
+}

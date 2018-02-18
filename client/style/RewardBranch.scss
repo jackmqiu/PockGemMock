@@ -1,0 +1,15 @@
+
+
+:local(.reward__branch_slot) {
+  height: 100%;
+  width: 200px;
+}
+:local(.reward__branch_heading) {
+  color: lighten(red, 20%);
+}
+
+:local(.branch_image) {
+  display: block;
+  height: auto;
+  width: 100%;
+}

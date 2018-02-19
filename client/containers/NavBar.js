@@ -8,13 +8,11 @@ import { bindActionCreators } from "redux";
 class NavBar extends Component {
   constructor(props) {
     super(props);
-  }
-  componentWillMount(){
-
     browserHistory.push({
       pathname: `/${this.props.tabs[2].tab_link}`,
     });
   }
+
 
   clickHandler(tab) {
     this.props.selectTab(tab);
@@ -24,7 +22,11 @@ class NavBar extends Component {
   }
 
   renderTabs(tab) {
-
+    if (!this.props.activeTab) {
+      return (
+        <div>loading...</div>
+      )
+    }
     if (this.props.activeTab.tab_name === tab.tab_name) {
       return (
         <li

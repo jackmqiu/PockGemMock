@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import RewardBranch from "../components/RewardBranch";
 import styles from "../style/Season.scss";
+import { browserHistory, Router, Link, withRouter } from 'react-router-3';
 import { connect } from 'react-redux';
 import { selectBranch } from "../actions/index";
 import { bindActionCreators } from "redux";
@@ -16,13 +17,15 @@ class Season extends Component {
       pathname: `/${branch.title}/rewards/1`,
     });
   }
+
   renderBranch(branch) {
     return (
-      <RewardBranch
-        onBranchSelect = {this.clickHandler}
-        key={branch.id}
-        branch={branch}
-      />
+      <li onClick={() => this.clickHandler(branch)} key={branch.id}>
+        <RewardBranch
+          onBranchSelect = {this.clickHandler}
+          branch={branch}
+        />
+      </li>
     );
   };
   render() {

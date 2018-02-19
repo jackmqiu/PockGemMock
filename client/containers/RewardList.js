@@ -1,31 +1,36 @@
-import React from "react";
+import React, {Component} from "react";
 import RewardListItem from "../components/RewardListItem.js";
 import styles from "../style/RewardList.scss";
 import { connect } from 'react-redux';
 
-const RewardList = props => {
-  let i = 0;
-  const rewardItems = props.rewards.map(reward => {
-    i++;
+class RewardList extends Component {
+  constructor(props) {
+    super(props);
+  }
+  renderRewards(reward) {
     return (
       <RewardListItem
-        onRewardSelect={props.onRewardSelect}
-        key={i}
+        onRewardSelect={this.props.onRewardSelect}
         reward={reward}
       />
     );
-  });
+  }
 
-  return (
-    <div className={styles.season_container}>
-      {rewardItems}
-    </div>
-  );
+  render() {
+    return (
+      <div className={styles.season_container}>
+        {this.props.rewards[this.props.activeBranch.key].map(
+          (reward) => this.renderRewards(reward)
+        )}
+      </div>
+    );
+  }
 };
 
 function mapStateToProps(state) {
   return {
-    rewards: state.legendary1,
+    activeBranch: state.activeBranch,
+    rewards: state.rewards,
   }
 }
 

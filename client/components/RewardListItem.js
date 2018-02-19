@@ -1,15 +1,37 @@
-import React from "react";
+import React, {Component} from "react";
 import styles from "../style/RewardListItem.scss";
 
-const RewardListItem = ({ reward, onRewardSelect }) => {
-  const defaultImgUrl = "https://www.deckshop.pro/img/card/InfernoD.png";
-  return (
-    <div onClick={() => onRewardSelect(reward)}>
-      <figure>
-        <img className={styles.reward_image} src={reward.imageUrl || defaultImgUrl} />
-      </figure>    
-    </div>
-  );
+import { connect } from 'react-redux';
+import { toggleModal } from "../actions/index";
+import { bindActionCreators } from "redux";
+
+class RewardListItem extends Component {
+  constructor(props) {
+    super(props);
+  }
+  handleRewardClick(reward) {
+    this.props.toggleModal(reward.description);
+  }
+  render() {
+    const defaultImgUrl = "https://www.deckshop.pro/img/card/InfernoD.png";
+    return (
+      <div onClick={() => this.handleRewardClick(this.props.reward)}>
+        <figure>
+          <img className={styles.reward_image} src={this.props.reward.imageUrl || defaultImgUrl} />
+        </figure>
+      </div>
+    );
+  }
 };
 
-export default RewardListItem;
+function mapStateToProps(state) {
+  return {
+
+  }
+}
+
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators({ toggleModal: toggleModal }, dispatch);
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(RewardListItem);

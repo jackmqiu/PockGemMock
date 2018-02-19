@@ -36,9 +36,7 @@ class Season extends Component {
   render() {
     return (
       <div className={styles.season}>
-        <OverlayModal
-          display = {this.props.modalStatus}
-        />
+        <OverlayModal />
         <div className={styles.season_title}>{this.props.seasonObject.title}</div>
         <ul className={styles.container}>
           {this.props.seasonObject.branches.map((branch) => this.renderBranch(branch))}

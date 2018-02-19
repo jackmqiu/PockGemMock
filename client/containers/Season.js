@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import RewardBranch from "../components/RewardBranch";
+import OverlayModal from "../components/OverlayModal";
 import styles from "../style/Season.scss";
 import { browserHistory, Router, Link, withRouter } from 'react-router-3';
 import { connect } from 'react-redux';
@@ -9,21 +10,25 @@ import { bindActionCreators } from "redux";
 class Season extends Component {
   constructor(props) {
     super(props);
+
   };
 
-  clickHandler(branch) {
-    this.props.selectBranch(branch);
-    browserHistory.push({
-      pathname: `/${branch.title}/rewards/1`,
-    });
+  branchClickHandler(branch) {
+    if (!branch.lockStatus){
+      this.props.selectBranch(branch);
+      browserHistory.push({
+        pathname: `/${branch.title}/rewards/1`,
+      });
+    }
   }
+
 
   renderBranch(branch) {
     return (
-      <li onClick={() => this.clickHandler(branch)} key={branch.id}>
+      <li onClick={() => this.branchClickHandler(branch)} key={branch.id}>
         <RewardBranch
-          onBranchSelect = {this.clickHandler}
-          branch={branch}
+          onBranchSelect = {this.branchClickHandler}
+          branch = {branch}
         />
       </li>
     );
@@ -31,6 +36,9 @@ class Season extends Component {
   render() {
     return (
       <div className={styles.season}>
+        <OverlayModal
+          display = {this.props.modalStatus}
+        />
         <div className={styles.season_title}>{this.props.seasonObject.title}</div>
         <ul className={styles.container}>
           {this.props.seasonObject.branches.map((branch) => this.renderBranch(branch))}
@@ -43,6 +51,8 @@ class Season extends Component {
 function mapStateToProps(state) {
   return {
     seasonObject: state.seasonObject,
+    activeBranch: state.activeBranch,
+    modalStatus: state.modalStatus,
   }
 }
 

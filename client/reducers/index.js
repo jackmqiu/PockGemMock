@@ -4,6 +4,7 @@ import Legendary2Reducer from './reducer_Legendary2_40_rewards';
 import Legendary3Reducer from './reducer_Legendary3_40_rewards';
 import DiscountReducer from './reducer_Discount_28_rewards';
 
+import ModalStatusReducer from './reducer_modal_status';
 import RewardsReducer from './reducer_Rewards';
 import SeasonObjectReducer from './reducer_season_branches';
 import ActiveBranchReducer from './reducer_active_branch';
@@ -16,6 +17,7 @@ const rootReducer = combineReducers({
   rewards: RewardsReducer,
   tabs: TabsReducer,
   activeTab: ActiveTabReducer,
+  modalStatus: ModalStatusReducer,
 })
 
 export default rootReducer;

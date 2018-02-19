@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import RewardListItem from "../components/RewardListItem";
+import OverlayModal from "../components/OverlayModal";
 import styles from "../style/RewardList.scss";
 import buttonStyles from "../style/Buttons.scss";
 import { browserHistory, Router, Link, withRouter } from 'react-router-3';
@@ -57,7 +58,7 @@ class RewardList extends Component {
   render() {
     return (
       <div className={styles.container}>
-
+        <OverlayModal/>
         {this.state.activePage < this.state.rewardsPages.length &&
           <button
             className={buttonStyles.next_button}
@@ -90,6 +91,7 @@ function mapStateToProps(state) {
   return {
     activeBranch: state.activeBranch,
     rewards: state.rewards,
+    modalStatus: state.modalStatus,
   }
 }
 

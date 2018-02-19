@@ -1,5 +1,16 @@
+:local(.header) {
+  font-size: 1rem;
+  height: 3rem;
+  background-color: #fff;
+  border-bottom: 1px solid #bbb;
+
+  display: flex;
+  justify-content: space-between;
+}
+
 :local(nav_bar) {
   display: block;
+  height: 50px;
 }
 
 :local(ul) {

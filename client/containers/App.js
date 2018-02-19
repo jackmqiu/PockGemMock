@@ -20,7 +20,7 @@ class App extends Component {
     return (
       <div>
         <NavBar/>
-
+        {this.props.children}
       </div>
     )
   }

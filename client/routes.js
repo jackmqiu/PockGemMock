@@ -19,10 +19,9 @@ export default (
     <Route path="/" component={App}>
       <Route path="battle/" component={Battle} />
       <Route path="prizes&ranks/" component={Prizes_Ranks} />
-      <Route path="rewards/" component={Season}>
-        <Route path="/:branchId/rewards/:pg" component={RewardList}/>
-      </Route>
+      <Route path="rewards/" component={Season}/>
       <Route path="armoury/" component={Armoury}/>
     </Route>
+    <Route path="/:branchId/rewards/:pg" component={RewardList}/>
   </Router>
 )

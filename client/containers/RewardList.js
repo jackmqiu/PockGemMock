@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import RewardListItem from "../components/RewardListItem";
 import styles from "../style/RewardList.scss";
 import buttonStyles from "../style/Buttons.scss";
+import { browserHistory, Router, Link, withRouter } from 'react-router-3';
 import { connect } from 'react-redux';
 
 class RewardList extends Component {
@@ -35,20 +36,45 @@ class RewardList extends Component {
     );
   }
 
+  nextClickHandler() {
+    this.setState((prevState) => {
+      return {activePage: prevState.activePage + 1};
+    });
+  }
+
+  prevClickHandler() {
+    this.setState((prevState) => {
+      return {activePage: prevState.activePage - 1};
+    });
+  }
+
+  exitClickHandler() {
+    browserHistory.push({
+      pathname: `/`,
+    });
+  }
+
   render() {
     return (
       <div className={styles.container}>
 
         {this.state.activePage < this.state.rewardsPages.length &&
-          <button className={buttonStyles.next_button}>
+          <button
+            className={buttonStyles.next_button}
+            onClick={() => this.nextClickHandler()}
+          >
             Next
           </button>
         }
         {this.state.activePage > 1 &&
-          <button className={buttonStyles.next_button}>
+          <button
+            className={buttonStyles.next_button}
+            onClick={() => this.prevClickHandler()}
+          >
             Previous
           </button>
         }
+        <button onClick={() => this.exitClickHandler()}> Exit </button>
         <div>Page {this.state.activePage} of {this.state.rewardsPages.length}</div>
         <div className={styles.season_container}>
           {this.state.rewardsPages[this.state.activePage - 1].map(

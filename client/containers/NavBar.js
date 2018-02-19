@@ -11,20 +11,37 @@ class NavBar extends Component {
 
   }
 
-  clickHandler(link) {
-    //this.props.fetchFactoryDetails(id);
+
+  clickHandler(tab) {
+    this.props.selectTab(tab);
     browserHistory.push({
-      pathname: `/${link}`,
+      pathname: `/${tab.tab_link}`,
     });
   }
 
   renderTabs(tab) {
+    if (this.props.activeTab.tab_name === tab.tab_name) {
+      return (
+        <li
+          onClick={() => {this.clickHandler(tab)}}
+          key={tab.tab_name}
+          className={styles.active}
+        >
+            {tab.tab_name}
+        </li>
+      );
+    } else {
+      return (
+        <li
+          onClick={() => {this.clickHandler(tab)}}
+          key={tab.tab_name}
+          className={styles.inactive}
+        >
+            {tab.tab_name}
+        </li>
+      );
+    }
 
-    return (
-      <li onClick={() => {this.clickHandler(tab.tab_link)}} key={tab.tab_name}>
-        {tab.tab_name}
-      </li>
-    );
   }
 
   render() {
@@ -41,6 +58,7 @@ class NavBar extends Component {
 function mapStateToProps(state) {
   return {
     tabs: state.tabs,
+    activeTab: state.activeTab,
   }
 }
 

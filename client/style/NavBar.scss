@@ -26,6 +26,11 @@
   padding: 8px 16px;
   text-decoration: none;
 }
+
 :local(.active) {
-    background-color: #4CAF50;
+  background-color: #4CAF50;
+}
+
+:local(.inactive) {
+  background-color: yellow;
 }

@@ -13,3 +13,11 @@ export function selectTab(tab) {
     payload: tab,
   }
 }
+
+export function toggleModal(branch) {
+  console.log('modal toggled', branch);
+  return {
+    type: "MODAL_TOGGLED",
+    payload: branch,
+  }
+}

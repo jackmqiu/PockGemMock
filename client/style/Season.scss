@@ -4,13 +4,16 @@
 }
 
 :local(.container) {
-  background-color: yellow;
   display:flex;
   flex-direction: row;
-  padding: 10px;
+  padding: 0px;
   overflow: auto;
 }
 
+:local(.season_title) {
+
+  font-size: 2rem;
+  margin-left: 1rem;
+}
 :local(.branch_container) {
-  width: 400px
 }

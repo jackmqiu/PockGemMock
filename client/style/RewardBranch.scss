@@ -24,25 +24,25 @@
 }
 
 :local(.branch_modal) {
-    display: block; /* Hidden by default */
-    position: absolute;
-    z-index: 2; /* Sit on top */
-    width: 20rem; /* Full width */
-    height: 40rem; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  display: block;
+  position: absolute;
+  z-index: 2;
+  width: 20rem;
+  height: 40rem;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4); 
 }
 
 :local(.info_button) {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    position: absolute;
-    color: white;
-    z-index: 5;
-    padding: 1rem 3rem;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    font-size: 2rem;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  position: absolute;
+  color: white;
+  z-index: 5;
+  padding: 1rem 3rem;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 2rem;
 }

@@ -6,11 +6,15 @@
   width: 20rem;
   background-color: pink;
   text-align: center;
+  background-color: #15609A;
+  border: 0.3rem solid #FCA700;
+  border-radius: 1rem;
 }
 :local(.reward__branch_heading) {
   font-family: 'Roboto', sans-serif;
   font-size: 2.5rem;
   font-weight: bold;
+  color: #BDBEC2;
   margin: 5rem 2rem;
   text-transform: uppercase;
   text-align: center;
@@ -19,10 +23,13 @@
 :local(.branch__image) {
 
   border-radius: 30%;
-
+  margin: repeat(4, 2rem);
   display: block;
   height: auto;
-  width: 100%;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-top: 10%;
+  width: 80%;
 }
 
 :local(.branch_discount_modal) {

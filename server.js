@@ -5,15 +5,14 @@ var app = express();
 
 app.use('/static', express.static('public'));
 app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname + '/home.html'));
+    res.sendFile(path.join(__dirname + '/public/home.html'));
 });
 
 
-// put any new routes above this, this is an end-all catchall that redirects to
-// the home page
 app.get('*', function(req, res) {
     res.redirect('/');
 });
+
 
 const PORT = 3005;
 

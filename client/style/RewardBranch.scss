@@ -1,15 +1,16 @@
 
 
 :local(.branch_figure) {
-  margin: 5px;
-  height: 500px;
-  width: 250px;
+  margin: 1rem;
+  height: 40rem;
+  width: 20rem;
   background-color: pink;
 }
 :local(.reward__branch_heading) {
   font-family: 'Roboto', sans-serif;
+  font-size: 2.5rem;
   font-weight: bold;
-  margin-top: 3rem;
+  margin: 5rem 2rem;
   text-transform: uppercase;
 }
 
@@ -26,8 +27,8 @@
     display: block; /* Hidden by default */
     position: absolute;
     z-index: 2; /* Sit on top */
-    width: 250px; /* Full width */
-    height: 500px; /* Full height */
+    width: 20rem; /* Full width */
+    height: 40rem; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
@@ -39,9 +40,9 @@
     position: absolute;
     color: white;
     z-index: 5;
-    padding: 15px 32px;
+    padding: 1rem 3rem;
     text-align: center;
     text-decoration: none;
     display: block;
-    font-size: 16px;
+    font-size: 2rem;
 }

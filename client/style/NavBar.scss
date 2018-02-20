@@ -1,8 +1,10 @@
 :local(.header) {
-  font-size: 1rem;
-  height: 3rem;
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  height: 4rem;
   background-color: #fff;
-  border-bottom: 1px solid #bbb;
+  
 
   display: flex;
   justify-content: space-between;
@@ -10,16 +12,16 @@
 
 :local(nav_bar) {
   display: block;
-  height: 50px;
+
 }
 
 :local(ul) {
-    position: fixed;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    background-color: #f1f1f1;
+  position: fixed;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #f1f1f1;
 }
 
 :local(li) {

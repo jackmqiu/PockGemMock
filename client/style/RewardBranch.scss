@@ -5,6 +5,7 @@
   height: 40rem;
   width: 20rem;
   background-color: pink;
+  text-align: center;
 }
 :local(.reward__branch_heading) {
   font-family: 'Roboto', sans-serif;
@@ -12,6 +13,7 @@
   font-weight: bold;
   margin: 5rem 2rem;
   text-transform: uppercase;
+  text-align: center;
 }
 
 :local(.branch__image) {
@@ -44,11 +46,13 @@
 :local(.info_button) {
   background-color: #4CAF50; /* Green */
   border: none;
-  position: absolute;
+  position: relative;
   color: white;
   z-index: 5;
-  padding: 1rem 3rem;
-  text-align: center;
+  padding: .6rem;
+  width: 40%;
+  margin-left: 30%;
+  margin-right: 30%;
   text-decoration: none;
   display: block;
   font-size: 2rem;

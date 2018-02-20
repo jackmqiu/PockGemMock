@@ -54,11 +54,9 @@ class NavBar extends Component {
   render() {
     return (
       <header className={styles.header}>
-        <nav className={styles.nav_bar}>
-          <ul>
-            {this.props.tabs.map((tab) => this.renderTabs(tab))}
-          </ul>
-        </nav>
+        <ul className={styles.nav_bar}>
+          {this.props.tabs.map((tab) => this.renderTabs(tab))}
+        </ul>  
       </header>
     )
   }

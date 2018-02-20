@@ -39,7 +39,7 @@ class NavBar extends Component {
       );
     } else {
       return (
-        <li
+        <li id={styles.nav_bar__li}
           onClick={() => {this.clickHandler(tab)}}
           key={tab.tab_name}
           className={styles.inactive}
@@ -54,9 +54,9 @@ class NavBar extends Component {
   render() {
     return (
       <header className={styles.header}>
-        <ul className={styles.nav_bar}>
+        <ul id={styles.nav_bar__ul}>
           {this.props.tabs.map((tab) => this.renderTabs(tab))}
-        </ul>  
+        </ul>
       </header>
     )
   }

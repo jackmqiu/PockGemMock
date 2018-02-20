@@ -75,7 +75,7 @@ class RewardList extends Component {
             Previous
           </button>
         }
-        <button onClick={() => this.exitClickHandler()}> Exit </button>
+        <button className="close" onClick={() => this.exitClickHandler()}>&times; </button>
         <div>Page {this.state.activePage} of {this.state.rewardsPages.length}</div>
         <div className={styles.season_container}>
           {this.state.rewardsPages[this.state.activePage - 1].map(

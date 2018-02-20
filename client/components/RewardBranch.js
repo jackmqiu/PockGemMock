@@ -16,13 +16,15 @@ class RewardCategory extends Component {
   render(){
 
     return (
-      <figure className={styles.branch}>
-
+      <figure className={styles.branch_figure}>
+        {this.props.branch.lockStatus &&
+          <div id="OverlayModal" className={styles.branch_modal}></div>
+        }
         <img className={styles.branch__image} src={this.props.branch.imageUrl} />
         <figcaption className={styles.reward__branch_heading}>{this.props.branch.title}</figcaption>
         {this.props.branch.lockStatus &&
           <button
-            className={buttonStyles.lock_button}
+            className={styles.info_button}
             onClick={() => this.handleInfoClick(this.props.branch)}
           >
             Info

@@ -16,9 +16,7 @@ class RewardListItem extends Component {
     const defaultImgUrl = "https://www.deckshop.pro/img/card/InfernoD.png";
     return (
       <div onClick={() => this.handleRewardClick(this.props.reward)}>
-        <figure>
-          <img className={styles.reward_image} src={this.props.reward.imageUrl || defaultImgUrl} />
-        </figure>
+        <img className={styles.reward_image} src={this.props.reward.imageUrl || defaultImgUrl} />
       </div>
     );
   }

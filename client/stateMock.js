@@ -97,7 +97,8 @@ const Rewards = {
     },
     {
       title: 'Prize',
-      description: 'Bitcoin',
+      description: 'Rare Ripple',
+      imageUrl: "http://statsroyale.com/images/cards/full/mega_knight.png",
     },
     {
       title: 'Prize',
@@ -195,7 +196,8 @@ const Rewards = {
     },
     {
       title: 'Prize',
-      description: 'Bitcoin',
+      description: 'Sexy Fanfare',
+      imageUrl: "https://vignette.wikia.nocookie.net/clashroyale/images/d/d3/IceWizardCard.png/revision/latest?cb=20171212204923",
     },
     {
       title: 'Prize',
@@ -263,7 +265,8 @@ const Rewards = {
     },
     {
       title: 'Prize',
-      description: 'Bitcoin',
+      description: 'Plain Ripple',
+      imageUrl: "https://vignette.wikia.nocookie.net/clashroyale/images/0/0b/MegaKnightCard.png/revision/latest?cb=20171212204943",
     },
     {
       title: 'Prize',
@@ -315,7 +318,8 @@ const Rewards = {
     },
     {
       title: 'Prize',
-      description: 'Bitcoin',
+      description: 'Year of the Doge',
+      imageUrl: "https://vignette.wikia.nocookie.net/clashroyale/images/e/e8/EliteBarbariansCard.png/revision/latest?cb=20171212204714",
     },
     {
       title: 'Prize',
@@ -365,7 +369,8 @@ const Rewards = {
   'legendary3': [
     {
       title: 'Prize',
-      description: 'Bitcoin',
+      description: 'Sh$% Coins',
+      imageUrl: "https://vignette.wikia.nocookie.net/clashroyale/images/1/12/ElectroWizardCard.png/revision/latest?cb=20171212203437",
     },
     {
       title: 'Prize',
@@ -491,7 +496,8 @@ const Rewards = {
     },
     {
       title: 'Prize',
-      description: 'Bitcoin',
+      description: 'Dentacoin',
+      imageUrl: "http://statsroyale.com/images/cards/full/knight.png",
     },
     {
       title: 'Prize',
@@ -543,7 +549,8 @@ const Rewards = {
     },
     {
       title: 'Prize',
-      description: 'Bitcoin',
+      description: 'Ethereum',
+      imageUrl: "https://vignette.wikia.nocookie.net/clashroyale/images/b/b7/MinionsCard.png/revision/latest?cb=20171212204954",
     },
     {
       title: 'Prize',

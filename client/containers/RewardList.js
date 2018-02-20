@@ -59,28 +59,31 @@ class RewardList extends Component {
     return (
       <div className={styles.container}>
         <OverlayModal/>
+        <button className="close" onClick={() => this.exitClickHandler()}>&times; </button>
         {this.state.activePage < this.state.rewardsPages.length &&
           <button
             className={buttonStyles.next_button}
             onClick={() => this.nextClickHandler()}
-          >
+            >
             Next
           </button>
         }
         {this.state.activePage > 1 &&
           <button
-            className={buttonStyles.next_button}
+            className={buttonStyles.prev_button}
             onClick={() => this.prevClickHandler()}
-          >
+            >
             Previous
           </button>
         }
-        <button className="close" onClick={() => this.exitClickHandler()}>&times; </button>
+        <div className={styles.branchTitle}>{this.props.activeBranch.title}</div>
         <div>Page {this.state.activePage} of {this.state.rewardsPages.length}</div>
-        <div className={styles.season_container}>
-          {this.state.rewardsPages[this.state.activePage - 1].map(
-            (reward) => this.renderRewards(reward)
-          )}
+        <div className={styles.grid_container}>
+          <div className={styles.season_container}>
+            {this.state.rewardsPages[this.state.activePage - 1].map(
+              (reward) => this.renderRewards(reward)
+            )}
+          </div>
         </div>
       </div>
     );

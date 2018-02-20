@@ -3,8 +3,25 @@
     border: none;
     color: white;
     padding: 1rem 2rem;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
+
+
+    position: absolute;
+    top: 50%;
+    left: 90%;
+  
+    font-size: 1rem;
+}
+:local(.prev_button) {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 1rem 2rem;
+
+
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    margin-left: 2rem;
+
     font-size: 1rem;
 }

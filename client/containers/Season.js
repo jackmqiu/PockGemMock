@@ -25,7 +25,7 @@ class Season extends Component {
 
   renderBranch(branch) {
     return (
-      <li onClick={() => this.branchClickHandler(branch)} key={branch.id}>
+      <li className={styles.branch_container} onClick={() => this.branchClickHandler(branch)} key={branch.id}>
         <RewardBranch
           onBranchSelect = {this.branchClickHandler}
           branch = {branch}

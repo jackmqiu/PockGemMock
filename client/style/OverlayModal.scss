@@ -1,5 +1,7 @@
 .modal {
     font-size: 2rem;
+    color: white;
+
     display: block;
     position: fixed;
     z-index: 1;
@@ -13,11 +15,12 @@
 }
 
 .modal-content {
-    background-color: #fefefe;
+    background-color: #082B4D;
     margin: 15% auto;
     padding: 3rem;
-    border: 0.3rem solid #888;
-    width: 80%; 
+    border: 0.3rem solid #FFEF7D;
+    width: 80%;
+    border-radius: 1rem;
 }
 
 .close {

@@ -20,6 +20,9 @@ class RewardCategory extends Component {
         {this.props.branch.lockStatus &&
           <div id="OverlayModal" className={styles.branch_modal}></div>
         }
+        {this.props.branch.discountPercentage &&
+          <div className={styles.branch_discount_modal}>{this.props.branch.discountPercentage}% </div>
+        }
         <img className={styles.branch__image} src={this.props.branch.imageUrl} />
         <div className={styles.reward__branch_heading}>{this.props.branch.title}</div>
         {this.props.branch.lockStatus &&

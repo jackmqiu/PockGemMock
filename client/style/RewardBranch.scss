@@ -1,14 +1,21 @@
 
 
-:local(.reward__branch_slot) {
-  height: 100%;
-  width: 200px;
+:local(.branch) {
+  height: 500px;
+  width: 250px;
+
 }
 :local(.reward__branch_heading) {
-  color: lighten(red, 20%);
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  margin-top: 3rem;
+  text-transform: uppercase;
 }
 
-:local(.branch_image) {
+:local(.branch__image) {
+
+  border-radius: 30%;
+
   display: block;
   height: auto;
   width: 100%;

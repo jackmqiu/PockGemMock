@@ -23,6 +23,13 @@
   width: 100%;
 }
 
+:local(.branch_discount_modal) {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  font-size: 2rem;
+  padding: 1rem 1rem;
+}
 :local(.branch_modal) {
   display: block;
   position: absolute;
@@ -31,7 +38,7 @@
   height: 40rem;
   overflow: auto;
   background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.4); 
+  background-color: rgba(0,0,0,0.4);
 }
 
 :local(.info_button) {

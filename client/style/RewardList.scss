@@ -1,6 +1,7 @@
 :local(.season_container) {
   margin-left: 12rem;
   margin-right: 12rem;
+  margin-top: 1rem;
   background-color: pink;
   display: grid;
   grid-template-rows: repeat(4, 1fr);
@@ -14,7 +15,7 @@
     max-width: 120rem;
 
     font-size: 2rem;
-
+    color: white;
     min-height: 50rem;
     text-align: center;
 

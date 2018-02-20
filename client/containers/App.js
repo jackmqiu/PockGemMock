@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Counter from '../components/Counter';
 import NavBar from './NavBar';
 import Season from './Season';
 import RewardList from './RewardList';

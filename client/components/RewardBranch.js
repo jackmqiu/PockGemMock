@@ -14,25 +14,21 @@ class RewardCategory extends Component {
     this.props.toggleModal(branch.unlockCriteria);
   }
   render(){
-    const imageUrl = this.props.branch.imageUrl;
 
     return (
-      <div>
-        <div className={styles.reward__branch_slot}>
-          <figure>
-            <img className={styles.branch_image} src={this.props.branch.imageUrl} />
-          </figure>
-        <div className={styles.reward__branch_heading}>{this.props.branch.title}</div>
+      <figure className={styles.branch}>
+
+        <img className={styles.branch__image} src={this.props.branch.imageUrl} />
+        <figcaption className={styles.reward__branch_heading}>{this.props.branch.title}</figcaption>
         {this.props.branch.lockStatus &&
           <button
-          className={buttonStyles.lock_button}
-          onClick={() => this.handleInfoClick(this.props.branch)}
+            className={buttonStyles.lock_button}
+            onClick={() => this.handleInfoClick(this.props.branch)}
           >
             Info
           </button>
         }
-        </div>
-      </div>
+      </figure>
     );
   }
 };

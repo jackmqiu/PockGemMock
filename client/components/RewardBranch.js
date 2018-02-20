@@ -21,7 +21,7 @@ class RewardCategory extends Component {
           <div id="OverlayModal" className={styles.branch_modal}></div>
         }
         <img className={styles.branch__image} src={this.props.branch.imageUrl} />
-        <figcaption className={styles.reward__branch_heading}>{this.props.branch.title}</figcaption>
+        <div className={styles.reward__branch_heading}>{this.props.branch.title}</div>
         {this.props.branch.lockStatus &&
           <button
             className={styles.info_button}

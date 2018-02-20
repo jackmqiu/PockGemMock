@@ -5,7 +5,7 @@ import RewardList from './RewardList';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import reducers from "../reducers";
-
+import '../style/style.scss';
 
 
 class App extends Component {

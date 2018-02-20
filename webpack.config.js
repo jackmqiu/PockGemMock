@@ -34,7 +34,12 @@ var config = {
                 require.resolve('css-loader'),
                 require.resolve('sass-loader'),
               ]
-            }
+            },
+            {
+              test: /\.(png|jpg)$/,
+              loader: 'url-loader?limit=8192'
+            },
+
         ]
     },
     resolve: {

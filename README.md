@@ -1,19 +1,18 @@
 # PockGemMock
-
-$ npm install
+```
+npm install
 ```
 
 ```
-$ npm run watch
-# runs webpack in dev mode and continously watches your code
-# for changes before recompiling
+npm run watch
+
 ```
 
 ```
-$ npm run start  # this command runs the express server to test locally
+npm run start  # this command runs the express server to test locally
 ```
 
-```
+
 Minimal hardcoding.
 
 Tabs, season object, locked status, discounts, rewards can all be retrieved from an API, stored in state, and app will render accordingly.

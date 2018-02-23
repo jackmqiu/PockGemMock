@@ -1,30 +1,38 @@
 :local(.next_button) {
     background-color: #FDCB52;
-    border: 0.3rem solid #FE9F07;
+    border: 0.15rem solid #FE9F07;
     color: white;
-    padding: 1rem 2rem;
-    border-radius: .5rem;
+    padding: .375rem .75rem;
+    border-radius: .175rem;
 
 
     position: absolute;
     top: 50%;
-    left: 90%;
+    left: 86%;
+    @media (min-width: 1000px) { //iPhone X
+      top: 50%;
+      left: 90%;
 
-    font-size: 1rem;
-    text-shadow: 2px 2px #ff0000;
+    }
+    font-size: .375rem;
+    text-shadow: .1rem .1rem #ff0000;
 }
 :local(.prev_button) {
     background-color: #FDCB52;
-    border: 0.3rem solid #FE9F07;
+    border: 0.15rem solid #FE9F07;
     color: white;
-    padding: 1rem 2rem;
-    border-radius: .5rem;
+    padding: .375rem .75rem;
+    border-radius: .175rem;
 
     position: absolute;
     top: 50%;
-    left: 0%;
-    margin-left: 2rem;
+    left: 5%;
+    @media (min-width: 1000px) { //iPhone X
+      top: 50%;
+      left: 1%;
 
-    font-size: 1rem;
-    text-shadow: .2rem .2rem #ff0000;
+    }
+
+    font-size: .375rem;
+    text-shadow: .1rem .1rem #ff0000;
 }

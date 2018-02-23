@@ -1,8 +1,8 @@
 :local(.header) {
-  font-size: 2.5rem;
+  font-size: 1rem;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
-  height: 5.7rem;
+  height: 2rem;
   background-color: #fff;
 
 
@@ -32,27 +32,27 @@
 
   float: left;
   color: #000;
-  padding: 1.5rem 1.5rem;
+  padding: .5rem .5rem;
   text-decoration: none;
-  border-radius: 1rem;
-  text-shadow: .1rem .1rem #9C3400;
+  border-radius: .25rem;
+  text-shadow: .025rem .025rem #9C3400;
   color: white;
 }
 
 :local(.tabs) {
   float: left;
 
-  padding: 0.75rem 1.5rem;
+  padding: 0.25rem 0.3rem;
 
 }
 
 :local(.active) {
   background-color: #FEBC2A;
-  border: 0.3rem solid #AE6D11;
-  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.9);
+  border: 0.1rem solid #AE6D11;
+  box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, 0.9);
 }
 
 :local(.inactive) {
   background-color: #4E93CA;
-  border: 0.3rem solid #4E8AC0;
+  border: 0.1rem solid #4E8AC0;
 }

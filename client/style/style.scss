@@ -4,13 +4,13 @@ body {
 }
 html {
   background-image: url("https://i.redd.it/adiglyj5cgnz.png");
-  @media (min-width: 2000px) { //iPhone 8
-    font-size: 150%;
+  @media (min-width: 800px) { //iPhone X
+    font-size: 110%;
   }
-  @media (min-width: 2200px) { //iPad Retina
-    font-size: 165%;
-  }
-  @media (min-width: 2400px) { //iPhone X
+  @media (min-width: 1000px) { //iPad Retina
     font-size: 180%;
+  }
+  @media (min-width: 1300px) { //iPhone X
+    font-size: 240%;
   }
 }

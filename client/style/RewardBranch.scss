@@ -1,21 +1,21 @@
 
 
 :local(.branch_figure) {
-  margin: 1rem;
-  height: 40rem;
-  width: 20rem;
+  margin: .375rem;
+  height: 15rem;
+  width: 7.5rem;
   background-color: pink;
   text-align: center;
   background-color: #15609A;
-  border: 0.3rem solid #FCA700;
-  border-radius: 1rem;
+  border: 0.15rem solid #FCA700;
+  border-radius: .375rem;
 }
 :local(.reward__branch_heading) {
   font-family: 'Roboto', sans-serif;
-  font-size: 2.5rem;
+  font-size: 1rem;
   font-weight: bold;
   color: #BDBEC2;
-  margin: 5rem 2rem;
+  margin-top: 1.5rem;
   text-transform: uppercase;
   text-align: center;
 }
@@ -23,7 +23,7 @@
 :local(.branch__image) {
 
   border-radius: 30%;
-  margin: repeat(4, 2rem);
+  margin: repeat(4, .75rem);
   display: block;
   height: auto;
   margin-right: 10%;
@@ -36,15 +36,15 @@
   display: block;
   position: absolute;
   z-index: 2;
-  font-size: 2rem;
-  padding: 1rem 1rem;
+  font-size: .75rem;
+  padding: .375rem .375rem;
 }
 :local(.branch_modal) {
   display: block;
   position: absolute;
   z-index: 2;
-  width: 20rem;
-  height: 40rem;
+  width: 7.5rem;
+  height: 15rem;
   overflow: auto;
   background-color: rgb(0,0,0);
   background-color: rgba(0,0,0,0.4);
@@ -56,11 +56,12 @@
   position: relative;
   color: white;
   z-index: 5;
-  padding: .6rem;
+  padding: .21rem;
   width: 40%;
   margin-left: 30%;
   margin-right: 30%;
+  margin-top: 1.5rem;
   text-decoration: none;
   display: block;
-  font-size: 2rem;
+  font-size: .75rem;
 }
